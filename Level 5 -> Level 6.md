@@ -9,4 +9,6 @@
 Cú pháp lệnh find có dạng find . -(option) filename.
 
 Một số thông tin thú vị cho lệnh find: 
-   - 
+   - Nó có 1 flag để xem kích thước tệp theo byte -size <bytes>.
+   - Nó cũng có tùy chọn chỉ xem các tập tin -tyfe f ((no directories/non-executables).
+   - Nó cũng có -readable flag, nhưng nó biểu hiện bạn có quyền đọc file đó hay không chứ không phải là human-readable
