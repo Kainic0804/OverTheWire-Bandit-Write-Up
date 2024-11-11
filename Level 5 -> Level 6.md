@@ -3,3 +3,10 @@
 Ý tưởng là khi dùng lệnh file thì nó trả về thông tin loại file, sau đó ta dùng grep để tìm và lọc các file chứa thông tin mình muốn ra. Để kết hợp ta dùng thêm " | ". Cú pháp sẽ như thế này <command> | grep <patten>.
 
 Để kiểm tra kích thước của file ta dùng lệnh du. Mặc định, lệnh du sẽ hiển thị dung lượng sử dụng theo đơn vị kilobyte nhưng ta có thể dùng thêm -b để hiện thị dạng byte, ngoài ra ta cần -a để hiện thị toàn bộ file kể cả file ẩn.
+
+Để xác định file có là not executable ta có thể dùng lệnh find kết hợp với -executable (thêm ! nếu muốn tìm file not executable).
+
+Cú pháp lệnh find có dạng find . -(option) filename.
+
+Một số thông tin thú vị cho lệnh find: 
+   - 
