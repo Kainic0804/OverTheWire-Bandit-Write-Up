@@ -2,7 +2,7 @@
 
 Đề yêu cầu mở file có tên "spaces in this filename". Thông thường ta sẽ tránh đặt tên file có khoảng trắng do nó phiền và khi xem bằng lệnh cat nó sẽ tưởng những thứ đằng sau dấu cách là đối số.
 
-Vì thế để xem file này ta cần bọc trong dấu ngoặc đơn hoặc kép hoặc mỗi dấu cách thêm " \ " thì ta có thể đọc được file
+Vì thế để xem file này ta cần bọc trong dấu ngoặc đơn hoặc kép hoặc mỗi dấu cách thêm " \ " thì ta có thể đọc được file.
 
 Ta được flag: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
