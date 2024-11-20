@@ -10,13 +10,13 @@
 Cú pháp lệnh find có dạng find . -(option) filename. Lưu ý dấu chấm đằng sau thể hiện tìm kiếm ở thư mục hiện tại, ta có thể tìm kiếm ở thư mục khác hoặc toàn bộ thư mục bằng lệnh " / ".
 
 Một số thông tin cho lệnh find: 
-   - Nó có 1 flag để xem kích thước tệp theo byte -size <bytes>.
-   - Tìm kiếm theo loại tệp tin: -tyfe f, d, ...
-   - Tìm kiếm theo thời gian sửa đổi tệp tin: -mtime.
-   - Tìm kiếm theo tên người dùng sở hữu tệp tin: -user.
-   - Tìm kiếm theo tên nhóm sở hữu tệp tin: -group.
-   - Thực hiện một lệnh trên các tệp tin được tìm thấy: -exec (VD: -exev rm{} .kk ko nên thử nha).
-   - Nó cũng có -readable flag, nhưng nó biểu hiện bạn có quyền đọc file đó hay không chứ không phải là human-readable.
+- Nó có 1 flag để xem kích thước tệp theo byte -size <bytes>.
+- Tìm kiếm theo loại tệp tin: -tyfe f, d, ...
+- Tìm kiếm theo thời gian sửa đổi tệp tin: -mtime.
+- Tìm kiếm theo tên người dùng sở hữu tệp tin: -user.
+- Tìm kiếm theo tên nhóm sở hữu tệp tin: -group.
+- Thực hiện một lệnh trên các tệp tin được tìm thấy: -exec (VD: -exev rm{} .kk ko nên thử nha).
+- Nó cũng có -readable flag, nhưng nó biểu hiện bạn có quyền đọc file đó hay không chứ không phải là human-readable.
 
 Bây giờ chúng ta sẽ nhìn tổng quát file này, nhìn vào hình ảnh ta thấy có tận 88 thư mục cần mở, vì thế tự mở từng cái một để tìm flag thì trông không được thông minh lắm.
 ![2](https://github.com/user-attachments/assets/a37bd38d-a92d-4964-aee2-45c969b95f2b)
