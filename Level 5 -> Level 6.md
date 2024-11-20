@@ -7,11 +7,15 @@
 
 Để xác định file có là not executable ta có thể dùng lệnh find kết hợp với -executable (thêm ! nếu muốn tìm file not executable). 
 
-Cú pháp lệnh find có dạng find . -(option) filename.
+Cú pháp lệnh find có dạng find . -(option) filename. Lưu ý dấu chấm đằng sau thể hiện tìm kiếm ở thư mục hiện tại, ta có thể tìm kiếm ở thư mục khác hoặc toàn bộ thư mục bằng lệnh " / ".
 
-Một số thông tin thú vị cho lệnh find: 
+Một số thông tin cho lệnh find: 
    - Nó có 1 flag để xem kích thước tệp theo byte -size <bytes>.
-   - Nó cũng có tùy chọn chỉ xem các tập tin -tyfe f ((no directories/non-executables).
+   - Tìm kiếm theo loại tệp tin: -tyfe f, d, ...
+   - Tìm kiếm theo thời gian sửa đổi tệp tin: -mtime.
+   - Tìm kiếm theo tên người dùng sở hữu tệp tin: -user.
+   - Tìm kiếm theo tên nhóm sở hữu tệp tin: -group.
+   - Thực hiện một lệnh trên các tệp tin được tìm thấy: -exec (VD: -exev rm{} .kk ko nên thử nha).
    - Nó cũng có -readable flag, nhưng nó biểu hiện bạn có quyền đọc file đó hay không chứ không phải là human-readable.
 
 Bây giờ chúng ta sẽ nhìn tổng quát file này, nhìn vào hình ảnh ta thấy có tận 88 thư mục cần mở, vì thế tự mở từng cái một để tìm flag thì trông không được thông minh lắm.
