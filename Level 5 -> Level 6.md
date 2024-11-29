@@ -6,7 +6,7 @@ Lệnh grep có các biến thể khác như là egrep, fgrep, rgrep:
 - fgrep: Tìm kiếm theo mẫu không sử dụng bất kì biểu thức chính quy nào, lệnh này tương đương với grep -F.
 - rgrep: Tìm kiếm mẫu trong toàn bộ cây thư mục bao gồm cả thư mục con, lệnh này tương đương với grep -r.
 
-Biểu thức chính quy là dùng các dấu như +, -, *, | ,v.v nhằm giúp ta tìm kiếm nhiều kiểu mẫu phức tạp hơn. Có gì thì tự tìm hiểu thêm.
+Biểu thức chính quy là dùng các dấu như +, -, *, | ,v.v nhằm giúp ta tìm kiếm nhiều kiểu mẫu phức tạp hơn. Có thể tìm hiểu qua trang GNU Manual.
 
 ![1](https://github.com/user-attachments/assets/0ffe4cb8-d261-4882-b98f-76bbc74a8482)
 Ý tưởng ở đây là khi dùng 1 số lệnh như lệnh file, du thì nó trả về thông tin tương ứng, sau đó ta dùng grep để tìm và lọc các file chứa thông tin mình muốn ra. Để kết hợp ta dùng thêm " | ".
