@@ -1,7 +1,15 @@
-![1](https://github.com/user-attachments/assets/0ffe4cb8-d261-4882-b98f-76bbc74a8482)
 Ở bài này mình sẽ dùng thêm lệnh grep, là lệnh tìm chuỗi trong file chỉ định, lệnh này tìm kiếm thông tin theo ý người dùng khi người dùng đưa thông tin vào. Lệnh grep có nhiều lựa chọn như thêm -i thì không phân biệt hoa thường, -r để tìm tất cả các file các thư mục con, -v để tìm kiếm ngược, -n để hiện kết quả ở dòng nào, v.v.
 
-Ý tưởng là khi dùng 1 số lệnh như lệnh file, du thì nó trả về thông tin tương ứng, sau đó ta dùng grep để tìm và lọc các file chứa thông tin mình muốn ra. Để kết hợp ta dùng thêm " | ".
+Lệnh grep có các biến thể khác như là egrep, fgrep, rgrep:
+- grep: Tìm kiếm theo mẫu sử dụng biểu thức chính quy cơ bản (BRE).
+- egrep: Tìm kiếm theo mẫu sử dụng biểu thức chính quy mở rộng (ERE), lệnh này tương đương với grep -E.
+- fgrep: Tìm kiếm theo mẫu không sử dụng bất kì biểu thức chính quy nào, lệnh này tương đương với grep -F.
+- rgrep: Tìm kiếm mẫu trong toàn bộ cây thư mục bao gồm cả thư mục con, lệnh này tương đương với grep -r.
+
+Biểu thức chính quy là dùng các dấu như +, -, *, | ,v.v nhằm giúp ta tìm kiếm nhiều kiểu mẫu phức tạp hơn. Có gì thì tự tìm hiểu thêm.
+
+![1](https://github.com/user-attachments/assets/0ffe4cb8-d261-4882-b98f-76bbc74a8482)
+Ý tưởng ở đây là khi dùng 1 số lệnh như lệnh file, du thì nó trả về thông tin tương ứng, sau đó ta dùng grep để tìm và lọc các file chứa thông tin mình muốn ra. Để kết hợp ta dùng thêm " | ".
 
 Để kiểm tra kích thước của file ta dùng lệnh du. Mặc định, lệnh du sẽ hiển thị dung lượng sử dụng theo đơn vị kilobyte nhưng ta có thể dùng thêm -b để hiện thị dạng byte, ngoài ra ta cần -a để hiện thị toàn bộ file kể cả file ẩn.
 
